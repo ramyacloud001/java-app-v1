@@ -1,5 +1,4 @@
 FROM openjdk:11
-WORKDIR /app
-COPY . .
+COPY *.jar *.jar
 EXPOSE 80
-ENTRYPOINT ["java"]
+ENTRYPOINT ["java", "-jar", "*.jar"]
